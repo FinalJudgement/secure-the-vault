@@ -21,15 +21,15 @@ input3 = input2 - 1; //<------step 7
 
 const body = document.querySelector("body");
 const para = document.createElement("p");
-const node = document.createTextNode(selectedIndividual);
+// const node = document.createTextNode(selectedIndividual);
 const button = document.createElement("button");
 const btnNode = document.createTextNode("Reveal");
 
-para.appendChild(node);
-body.appendChild(para);
+// para.appendChild(node);
+// body.appendChild(para);
 
 button.addEventListener("click", () => {
-  alert(`${input1}-${input2}-${input3}`); //<------step 8
+  alert(`${selectedIndividual} ${input1}-${input2}-${input3}`); //<------step 8
 });
 
 button.appendChild(btnNode);
